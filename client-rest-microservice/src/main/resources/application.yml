@@ -1,2 +1,6 @@
 server:
   port: 8080
+feign:
+  testing:
+    client:
+      url: ${TESTING_CLIENT_URL:http://localhost:8081/testing}
