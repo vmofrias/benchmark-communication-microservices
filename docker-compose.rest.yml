@@ -1,0 +1,13 @@
+services:
+  client-rest-microservice:
+    image: local/client-rest-microservice:1.0
+    container_name: client-rest-app
+    environment:
+      - FEIGN_TESTING_CLIENT_URL=http://resource-rest-app:8081/testing 
+    ports:
+      - 8080:8080
+  resource-rest-microservice:
+    image: local/resource-rest-microservice:1.0
+    container_name: resource-rest-app
+    ports:
+      - 8081:8081
