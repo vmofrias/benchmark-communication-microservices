@@ -24,6 +24,8 @@
     <modules>
 		<module>client-rest-microservice</module>
 		<module>resource-rest-microservice</module>
+        <module>client-grpc-microservice</module>
+		<module>resource-grpc-microservice</module>
 	</modules>
     <scm>
 		<connection/>
